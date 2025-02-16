@@ -10,21 +10,25 @@ import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "employees")
+@Table(name = "employee")
 public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int empId;
-    @Column(name = "EMP_NAME")
-    private String empName;
-    @Column(name="EMP_SALARY")
-    private int empSalary;
-    @Column(name="EMP_PHNO")
-    private int empPhno;
+    private int empid;
+
+    @Column(name = "empname")
+    private String empname;
+
+    @Column(name = "empsalary")
+    private int empsalary;
+
+    @Column(name = "empphno", nullable = true)
+    private String empphno;
+
 
 
 

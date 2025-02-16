@@ -1,7 +1,7 @@
 package com.pg.employee.data.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,21 +10,14 @@ import org.springframework.http.HttpStatusCode;
 
 @Getter
 @Setter
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 public class Employeedto {
 
-    private int empId;
-
-
-    private String empName;
-
-
-    private int empSalary;
-
-
-    private int empPhno;
+    private int empid;
+    private String empname;
+    private int empsalary;
+    private String empphno;
 
 
 

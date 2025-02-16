@@ -7,18 +7,18 @@ public class Employeemapper {
     public static Employeedto mapToEmployeedto(Employee employee){
 
         return  new Employeedto(
-                employee.getEmpId(),
-                employee.getEmpName(),
-                employee.getEmpSalary(), // ✅ empSalary comes first
-                employee.getEmpPhno()
+                employee.getEmpid(),
+                employee.getEmpname(),
+                employee.getEmpsalary(),
+                employee.getEmpphno()
         );
     }
     public static Employee mapToEmployee(Employeedto employeedto){
         return  new Employee(
-                employeedto.getEmpId(),
-                employeedto.getEmpName(),
-                employeedto.getEmpSalary(), // ✅ empSalary comes first
-                employeedto.getEmpPhno()
+                employeedto.getEmpid(),
+                employeedto.getEmpname(),
+                employeedto.getEmpsalary(),
+                employeedto.getEmpphno()
         );
     }
 }
